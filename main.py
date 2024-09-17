@@ -7,3 +7,5 @@ class Student:
     
 st1 = Student("Yousef")
 print(st1.getName())
+
+print("something")
