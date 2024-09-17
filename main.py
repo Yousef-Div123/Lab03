@@ -16,7 +16,7 @@ def printStudents(stList):
 def createRandomStudents():
     newStList = []
     for i in range(10):
-        newStList.append(Student("Student number " + str(random.randint(1, 10))))
+        newStList.append(Student("Student number: " + str(random.randint(1, 10))))
 
     return newStList
 
