@@ -14,11 +14,11 @@ def printStudents(stList):
         print(st.getName())
 
 def createRandomStudents():
-    newStList = []
+    newStudentList = []
     for i in range(10):
-        newStList.append(Student("Student number " + str(random.randint(1, 10))))
+        newStudentList.append(Student("Student number " + str(random.randint(1, 10))))
 
-    return newStList
+    return newStudentList
 
 printStudents(createRandomStudents())
 
