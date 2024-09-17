@@ -1,3 +1,5 @@
+import random
+
 class Student:
     def __init__(self, name):
         self.name = name
@@ -7,8 +9,15 @@ class Student:
     
 studentList = [Student("Yousef"),Student("Khalid"),Student("Ahmad")]
 
-def printStudents():
-    for st in studentList:
+def printStudents(stList):
+    for st in stList:
         print(st.getName())
 
-printStudents()
+def createRandomStudents():
+    newStList = []
+    for i in range(10):
+        newStList.append(Student("Student number " + str(random.randint(1, 10))))
+
+    return newStList
+
+printStudents(createRandomStudents())
