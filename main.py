@@ -5,7 +5,10 @@ class Student:
     def getName(self):
         return self.name
     
-st1 = Student("Yousef")
-print(st1.getName())
+studentList = [Student("Yousef"),Student("Khalid"),Student("Ahmad")]
 
-print("something")
+def printStudents():
+    for st in studentList:
+        print(st.getName())
+
+printStudents()
